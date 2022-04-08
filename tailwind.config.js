@@ -6,9 +6,17 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1080px'
+      }
+    },
     extend: {
       colors: {
-        tcontent: '#64748B',
+        tcontent: '#94A3B8',
         theading: '#F8FAFC'
       },
       fontFamily: {
