@@ -1,7 +1,9 @@
 import Image from "next/image";
+import Container from "./Container";
 
-export default function InfoPost({ category, date, title, shortDescribtion, authorAvatar, authorName, authorJob }) {
+export default function InfoPost({ category, date, title, shortDescription, authorAvatar, authorName, authorJob }) {
   return (
+    <Container>
     <div className='space-y-3'>
       <div className='flex items-center space-x-2'>
         <p className='text-sm text-tcontent'>{category}</p>
@@ -11,7 +13,7 @@ export default function InfoPost({ category, date, title, shortDescribtion, auth
 
       <div className='flex-row space-y-3'>
         <h2 className='text-2xl text-theading leading-9'>{title}</h2>
-        <p className='text-tcontent leading-7'>{shortDescribtion}</p>
+        <p className='text-tcontent leading-7'>{shortDescription}</p>
         <div className='flex space-x-2'>
           <Image
             src={authorAvatar}
@@ -27,5 +29,6 @@ export default function InfoPost({ category, date, title, shortDescribtion, auth
         </div>
       </div>
     </div>
+    </Container>
   );
 }

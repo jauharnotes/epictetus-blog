@@ -22,7 +22,7 @@ export default function Navbar() {
                 Epictetus
               </a>
             </div>
-
+            {/* Nav list */}
             <div className='flex space-x-8 w-8/12'>
               <a href='#' className='text-theading transition-all hover:transform hover:translate-x ease-in-out duration-200 hover:border-b-2'>
                 UI Design</a>
@@ -47,10 +47,10 @@ export default function Navbar() {
                      ))}
                   </ul>
                 )}
-
               </div>
+              {/* Nav search */}
             </div>
-            <div className='w-2/12 flex justify-end'>
+            <div className='w-3/12 flex justify-end'>
               <form className='w-full'>
                 <input
                   type='text'
