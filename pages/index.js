@@ -21,7 +21,7 @@ export default function Home() {
           {posts.map((post) => (
             <div
               key={post.id}
-              className='lg:w-4/12 md:w-4/12 md:pr-3 w-full lg:px-4 py-6 '
+              className='lg:w-4/12 md:w-4/12 md:pr-3 w-full lg:px-4 py-6 md:border-none last:border-none border-b-[0.2px] border-tcontent mt-6'
             >
               <CardPost {...post} />
             </div>
