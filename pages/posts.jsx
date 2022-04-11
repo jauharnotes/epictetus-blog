@@ -4,12 +4,16 @@ import Layout from '@components/Layout';
 import mockPosts from '../utils/posts.json';
 import { useState } from 'react';
 import SectionHeader from '@components/SectionHeader';
+import Head from 'next/head';
 
 export default function Posts() {
-    const [posts, setPosts] = useState([]);
+    const [posts, setPosts] = useState(mockPosts);
 
   return (
     <Layout>
+      <Head>
+        <title>Posts &mdash; Epictetus</title>
+      </Head>
       <Container>
         <SectionHeader>UI Design</SectionHeader>
            {!posts.length ? (

@@ -2,11 +2,15 @@ import Container from "@components/Container";
 import Layout from "@components/Layout";
 import PostAuthor from "@components/PostAuthor";
 import PostMetaTitle from "@components/PostMetaTitle";
+import Head from "next/head";
 import Image from "next/image";
 
 export default function Detail() {
     return(
         <Layout>
+            <Head>
+                <title>Detail &mdash; Epictetus</title>
+            </Head>
             <Container>
                 <div className="md:w-6/12 w-full mt-16 flex flex-col items-center mx-auto space-y-4">
                     <PostMetaTitle category='UI DESIGN' date='July 2, 2021' title='Understanding color theory: the color wheel and finding complementary colors' center/>

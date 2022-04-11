@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import InfoPost from './InfoPost';
 
 export default function FiturePost() {
@@ -6,15 +7,17 @@ export default function FiturePost() {
     <article>
       <div className='w-full lg:flex justify-betwee'>
           <div className='lg:w-8/12 mr-7'>
-            <a href='#'>
-              <Image
-                src='/author-1.png'
-                width={710}
-                height={389}
-                alt='fiture image'
-                className='rounded-lg'
-              />
-            </a>
+            <Link href='./detail'>
+              <a href='#'>
+                <Image
+                  src='/author-1.png'
+                  width={710}
+                  height={389}
+                  alt='fiture image'
+                  className='rounded-lg'
+                />
+              </a>
+            </Link>
           </div>
           <div className='lg:w-4/12 pb-11'>
             <InfoPost
